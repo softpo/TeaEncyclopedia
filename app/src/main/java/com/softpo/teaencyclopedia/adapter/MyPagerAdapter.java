@@ -29,6 +29,9 @@ public class MyPagerAdapter extends PagerAdapter {
 
 	@Override
 	public Object instantiateItem(ViewGroup container, int position) {
+		if(list.size()==0){
+			return null;
+		}
 		container.addView(list.get(position));
 //		list.get(position).setOnClickListener(new OnClickListener() {
 //			

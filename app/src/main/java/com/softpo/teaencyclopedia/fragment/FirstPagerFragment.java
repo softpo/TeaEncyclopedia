@@ -68,7 +68,7 @@ public class FirstPagerFragment extends Fragment implements XListView.IXListView
 	private String title = "";
 	private String nickname = "";
 	private String source = "";
-	private List<Map<String, String>> adsTotalList = null;
+	private List<Map<String, String>> adsTotalList = new ArrayList<>();
 	private List<View> adsImageList = null;
 	private ImageView[] dots = null;
 	private int page = 1;
@@ -135,7 +135,6 @@ public class FirstPagerFragment extends Fragment implements XListView.IXListView
 		initDots();// 初始化右下角所有的点图片
 
 		// 每次返回到该页面必须重新实例化，否则会出现集合下标越界
-		adsTotalList = new ArrayList<Map<String, String>>();
 		adsTotalList.clear();
 		Log.i("TAG", "广告条的长度为："+adsTotalList.size());
 		adsImageList = new ArrayList<View>();
@@ -161,7 +160,8 @@ public class FirstPagerFragment extends Fragment implements XListView.IXListView
 				.setOnPageChangeListener(new OnPageChangeListener() {
 					@Override
 					public void onPageSelected(int arg0) {
-						
+						if(adsTotalList.size() == 0)
+							return;
 						if (adsTotalList.get(arg0) != null ) {
 							for (int i = 0; i < adsTotalList.size(); i++) {
 								dots[i].setEnabled(true);
