@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+	        android:id="@+id/layout_search_container"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" 
+	        android:gravity="center">
+        <ImageView
+	            android:id="@+id/imageView_search_back"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:onClick="clickButton"
+	            android:background="#EDEDEDED"
+	            android:src="@drawable/searchbackbtn" />
+        <TextView
+	            android:id="@+id/text_search_title"
+	            style="@style/TabTitleStyle"
+	            android:textSize="20sp"
+	            android:background="#F0F0F0" />
+        <ImageView
+	            android:id="@+id/imageView_search_home"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:onClick="clickButton"
+	            android:background="#EDEDEDED"
+	            android:src="@drawable/righttopbutton" />
+	    </LinearLayout>
+	    <TextView
+	            android:id="@+id/text_line"
+	            android:layout_width="match_parent"
+	            android:layout_height="2dp"
+	            android:background="#00CD00"/>
+
+	    <ListView
+	        android:id="@+id/listView_search_resultlist"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent" >
+	    </ListView>
+	    
+	    <TextView
+	            android:id="@+id/text_search_emptyinfo"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:gravity="center"
+	            android:text="@string/text_search_emptyinfo"/>
+
+</LinearLayout>

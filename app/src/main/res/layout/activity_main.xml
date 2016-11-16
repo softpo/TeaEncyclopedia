@@ -1,0 +1,283 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+										android:id="@+id/layout_drawer"
+										android:layout_width="match_parent"
+										android:layout_height="match_parent" >
+
+	<!-- 抽屉没有打开时的界面 -->
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical" >
+
+		<!-- TAB导航条 -->
+		<LinearLayout
+			android:id="@+id/layout_main_container"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center">
+
+			<TextView
+				android:id="@+id/textView1"
+				style="@style/TabTitleStyle"
+				android:text="头条" />
+
+			<TextView
+				android:id="@+id/textView2"
+				style="@style/TabTitleStyle"
+				android:text="百科" />
+
+			<TextView
+				android:id="@+id/textView3"
+				style="@style/TabTitleStyle"
+				android:text="资讯" />
+
+			<TextView
+				android:id="@+id/textView4"
+				style="@style/TabTitleStyle"
+				android:text="经营" />
+
+			<TextView
+				android:id="@+id/textView5"
+				style="@style/TabTitleStyle"
+				android:text="数据" />
+
+			<ImageView
+				android:id="@+id/imageView_main_more"
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:layout_height="match_parent"
+				android:onClick="clickButton"
+				android:background="#EDEDEDED"
+				android:src="@drawable/more" />
+		</LinearLayout>
+
+		<!-- TAB导航条下方的下划线 -->
+		<LinearLayout
+			android:id="@+id/layout_main_underline"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<View
+				android:id="@+id/textView_line1"
+				style="@style/UnderLine" />
+
+			<View
+				android:id="@+id/textView_line2"
+				style="@style/UnderLine" />
+
+			<View
+				android:id="@+id/textView_line3"
+				style="@style/UnderLine" />
+
+			<View
+				android:id="@+id/textView_line4"
+				style="@style/UnderLine" />
+
+			<View
+				android:id="@+id/textView_line5"
+				style="@style/UnderLine" />
+
+			<View
+				android:id="@+id/textView_line6"
+				style="@style/UnderLine_more" />
+		</LinearLayout>
+
+		<TextView
+			android:id="@+id/text_line"
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:background="#00CD00"/>
+
+		<android.support.v4.view.ViewPager
+			android:id="@+id/viewPager_main"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+
+	</LinearLayout>
+
+	<!-- 右侧抽屉内部的界面 -->
+	<LinearLayout
+		android:id="@+id/layout_main_rightdrawer"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_gravity="right"
+		android:background="#fff"
+		android:orientation="vertical"
+		android:clickable="true">
+		<LinearLayout
+			android:id="@+id/layout_drawer_container"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center">
+
+			<ImageView
+				android:id="@+id/imageView_drawer_back"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:background="#EDEDEDED"
+				android:onClick="clickButton"
+				android:src="@drawable/searchbackbtn" />
+
+			<TextView
+				android:id="@+id/text_drawer_title"
+				style="@style/TabTitleStyle"
+				android:textSize="20sp"
+				android:background="#EDEDEDED"
+				android:text="@string/title_right_drawer" />
+			<ImageView
+				android:id="@+id/imageView_drawer_home"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:onClick="clickButton"
+				android:background="#EDEDEDED"
+				android:src="@drawable/righttopbutton" />
+		</LinearLayout>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:background="#EDEDEDED"/>
+		<TextView
+			android:id="@+id/text_line1"
+			android:layout_width="match_parent"
+			android:layout_height="2dp"
+			android:background="#00CD00"/>
+
+		<RelativeLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:layout_margin="10dp" >
+			<EditText
+				android:id="@+id/editText_drawer_keyword"
+				android:layout_width="350dp"
+				android:layout_height="30dp"
+				android:layout_toLeftOf="@+id/imageView_drawer_search"
+				android:drawableLeft="@drawable/searchico"
+				android:background="@drawable/myedit"
+				android:layout_marginRight="10dp"
+				android:textSize="14sp"
+				android:textColor="#b8b8b8"
+				android:hint="@string/drawer_keyword">
+			</EditText>
+
+			<ImageView
+				android:id="@+id/imageView_drawer_search"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:layout_alignBottom="@id/editText_drawer_keyword"
+				android:layout_alignTop="@id/editText_drawer_keyword"
+				android:onClick="clickButton"
+				android:src="@drawable/gosearch" />
+		</RelativeLayout>
+
+		<TextView
+			android:id="@+id/text_drawer_promptinfo"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="10dp"
+			android:clickable="true"
+			android:text="@string/drawer_searchinfo" />
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="10dp"
+			android:background="@drawable/shoucangjia" >
+			<TextView
+				android:id="@+id/text_drawer_favorite"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_alignParentTop="true"
+				android:layout_marginLeft="5dp"
+				android:clickable="true"
+				android:textSize="12sp"
+				android:textColor="#808080"
+				android:text="@string/drawer_favorite" />
+		</RelativeLayout>
+		<TextView
+			android:id="@+id/text_drawer_myfavorite"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="16dp"
+			android:layout_marginTop="5dp"
+			android:layout_marginBottom="5dp"
+			android:onClick="clickButton"
+			android:clickable="true"
+			android:text="@string/drawer_myfavorite" />
+		<TextView
+			android:id="@+id/text_drawer_history"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="5dp"
+			android:layout_marginTop="5dp"
+			android:layout_marginLeft="16dp"
+			android:onClick="clickButton"
+			android:clickable="true"
+			android:text="@string/drawer_history" />
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="10dp"
+			android:background="@drawable/guanyu" >
+			<TextView
+				android:id="@+id/text_drawer_about"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_alignParentTop="true"
+				android:layout_marginLeft="5dp"
+				android:clickable="true"
+				android:textSize="12sp"
+				android:textColor="#808080"
+				android:text="@string/drawer_about" />
+		</RelativeLayout>
+		<TextView
+			android:id="@+id/text_drawer_copyright"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="16dp"
+			android:layout_marginTop="5dp"
+			android:layout_marginBottom="5dp"
+			android:onClick="clickButton"
+			android:clickable="true"
+			android:text="@string/drawer_copyright" />
+
+		<TextView
+			android:id="@+id/text_drawer_suggest"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="5dp"
+			android:layout_marginTop="5dp"
+			android:layout_marginLeft="16dp"
+			android:onClick="clickButton"
+			android:clickable="true"
+			android:text="@string/drawer_idea" />
+
+		<TextView
+			android:id="@+id/text_drawer_login"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="5dp"
+			android:layout_marginTop="5dp"
+			android:layout_marginLeft="16dp"
+			android:onClick="clickButton"
+			android:clickable="true"
+			android:text="@string/drawer_login" />
+
+		<TextView
+			android:id="@+id/text_drawer_exit"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="5dp"
+			android:layout_marginTop="5dp"
+			android:layout_marginLeft="16dp"
+			android:onClick="clickButton"
+			android:clickable="true"
+			android:text="@string/drawer_exit" />
+
+	</LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

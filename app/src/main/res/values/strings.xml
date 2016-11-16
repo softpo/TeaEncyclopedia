@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 页面Label -->
+    <string name="app_name">茶百科</string>
+    <string name="action_settings">设置</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_main">茶百科主页</string>
+    <string name="title_activity_dummy">页面碎片</string>
+    <string name="title_activity_favorite">我的收藏</string>
+    <string name="title_activity_map">地图查询</string>
+    <string name="title_activity_suggest">意见反馈</string>
+    <string name="title_activity_content">详情页面</string>
+    <string name="title_activity_copy_right">版权说明</string>
+    <string name="title_activity_search">搜索页面</string>
+
+    <!-- 导航标题 -->
+    <string name="title_activity_toutiao">头条</string>
+    <string name="title_activity_baike">百科</string>
+    <string name="title_activity_zixun">咨询</string>
+    <string name="title_activity_jingying">经营</string>
+    <string name="title_activity_shuju">数据</string>
+
+    <!-- 抽屉页面中 -->
+    <string name="title_right_drawer">茶百科</string>
+    <string name="drawer_searchinfo">热门搜索：茶</string>
+    <string name="drawer_keyword">关键字</string>
+    <string name="drawer_favorite">收藏夹</string>
+    <string name="drawer_myfavorite">我的收藏</string>
+    <string name="drawer_history">历史访问记录</string>
+    <string name="drawer_copyright">版权信息</string>
+    <string name="drawer_idea">意见反馈</string>
+    <string name="drawer_login">用户登陆</string>
+    <string name="drawer_exit">退出登陆</string>
+    <string name="content_updatetime">时间:</string>
+    <string name="content_inforesouce">来源:</string>
+
+    <!-- 下拉刷新 -->
+    <string name="pull_to_refresh_pull_label">下拉刷新...</string>
+    <string name="pull_to_refresh_release_label">释放以刷新...</string>
+    <string name="pull_to_refresh_refreshing_label">加载中...</string>
+    <string name="pull_to_refresh_tap_label">点击刷新...</string>
+
+    <!-- 版权说明 -->
+    <string name="copyright_info_title">买买茶.茶百科</string>
+    <string name="copyright_info_version">Android v1.2</string>
+    <string name="copyright_info_detail">Copyright@2011-2014</string>
+    <string name="copyright_info_author">作者：Teacher Liu</string>
+    <string name="drawer_about">关于客户端</string>
+    <string name="version_chabaike">版本号：V1.2</string>
+    <string name="author_chabaike">开发者：Steven</string>
+    <!-- &#160这种空格是不可以中断的，&#032;是可以中断的 -->
+    <string name="about_chabaike_info">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;茶百科,字如其名,这里只谈茶!结识茶人,学茶、品茶、悟道、继承传播中国茶文化。教你学会识茶选茶、贮存茶。更能品茶论水、赏茶雅玩。爱品茗。</string>
+    <string name="about_linkus_info">WEB：http://www.steven.com \n Email: steven@qq.com </string>
+
+    <!-- 意见反馈页面 -->
+    <string name="text_drawer_suggestion">意见反馈</string>
+    <string name="suggestion_title">标&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;题:</string>
+    <string name="suggestion_title_content"> 请输入标题内容</string>
+    <string name="suggestion_content_hint"> 请输入您要反馈的内容</string>
+    <string name="suggestion_content">反馈内容:</string>
+
+    <!-- 按钮文字 -->
+    <string name="button_delete">删除</string>
+    <string name="button_confirm">确定</string>
+    <string name="button_cancel">取消</string>
+
+    <!-- 菜单提示 -->
+    <string name="action_delete">删除</string>
+    <string name="action_nothing">取消</string>
+    <string name="text_favorite_emptyinfo">暂无数据</string>
+    <string name="text_search_emptyinfo">没有搜索到内容</string>
+    <string name="text_fragment_emptyinfo">正在加载或暂无内容...</string>
+
+    <!-- 对话框提示语句 -->
+    <string name="prompt_alert">提示：</string>
+    <string name="prompt_confirm_delete">确定要删除吗？</string>
+    <string name="prompt_delete_ok">删除成功！</string>
+    <string name="prompt_delete_err">删除失败！</string>
+
+    <!-- Toast提示语句 -->
+    <string name="prompt_collected">已收藏！</string>
+    <string name="prompt_collect_ok">成功收藏！</string>
+    <string name="prompt_collect_error">收藏失败！</string>
+    <string name="prompt_network_error">网络状况异常，请稍后重试！</string>
+    <string name="prompt_network_connecttimeout">网络访问超时，请重试！</string>
+    <string name="prompt_confirm_quit">再按一次退出哦！</string>
+    <string name="prompt_nocache">手机版本太低，无法正常缓存加载图片！</string>
+    <string name="prompt_keyword_empty">搜索的关键词不可以为空！</string>
+    <string name="prompt_title_empty">标题和内容不可以为空！</string>
+    <string name="prompt_suggest_ok">意见反馈提交成功！</string>
+    <string name="prompt_suggest_error">意见反馈提交失败，请重新尝试！</string>
+    <string name="title_activity_splash">茶百科首页</string>
+    <string name="contentDescription_splash">开机动画</string>
+    <string name="title_activity_login">LoginActivity</string>
+
+</resources>

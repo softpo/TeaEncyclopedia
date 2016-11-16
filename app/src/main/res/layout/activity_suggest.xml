@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+   <LinearLayout
+	     android:id="@+id/layout_copyright_container"
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content" 
+	     android:gravity="center">
+	    <ImageView
+	         android:id="@+id/imageView_suggestion_back"
+	         android:layout_width="wrap_content"
+	         android:layout_height="match_parent"
+	         android:onClick="clickButton"
+	         android:background="#EDEDEDED"
+	         android:src="@drawable/searchbackbtn" />
+	    <TextView
+	         android:id="@+id/text_copyright_title"
+	         style="@style/TabTitleStyle"
+	         android:background="#F0F0F0"
+	         android:text="@string/text_drawer_suggestion" />
+	    <ImageView
+	         android:id="@+id/imageView_suggestion_home"
+	         android:layout_width="wrap_content"
+	         android:layout_height="match_parent"
+	         android:onClick="clickButton"
+	         android:background="#EDEDEDED"
+	         android:src="@drawable/righttopbutton" />
+	 </LinearLayout>
+	 <TextView
+         android:id="@+id/text_line"
+         android:layout_width="match_parent"
+         android:layout_height="2dp"
+         android:background="#00CD00"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginRight="5dp"
+                android:text="@string/suggestion_title" />
+
+            <EditText
+                android:id="@+id/editText_suggestion_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:background="@drawable/app_list_corner_round"
+                android:hint="@string/suggestion_title_content" >
+
+                <requestFocus />
+            </EditText>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="10dp"
+            	android:text="@string/suggestion_content" />
+
+        <EditText
+            android:id="@+id/editText_suggestion_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minLines="5"
+            android:padding="8dp"
+            android:hint="@string/suggestion_content_hint"
+            android:background="@drawable/app_list_corner_round" />
+
+        <ImageView
+            android:id="@+id/imageView_suggestion_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="clickButton"
+            android:clickable="true"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/submit" />
+
+    </LinearLayout>
+
+    </LinearLayout>

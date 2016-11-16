@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imageView_firstDefault"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/firstdefault"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/contentDescription_splash" />
+
+    <TextView
+        android:id="@+id/textView_inter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:text="3秒后自动进入" />
+
+</RelativeLayout>

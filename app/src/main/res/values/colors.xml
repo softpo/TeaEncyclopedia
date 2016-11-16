@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="gray">#e0d5d5d5</color>
+    <color name="dimgrey">#e07f7f7f</color>
+    <color name="classify_head_bg">#ffde8439</color>
+    <color name="darkgrey">#ff525252</color>
+    <color name="orange">#ffedbd5d</color>
+    <color name="orange2">#ffef8d26</color>
+    <color name="white">#ffffffff</color>
+    <color name="litlegrey">#ff1c2524</color>
+    <color name="bggrey">#ffa9a9a9</color>
+    <color name="greytowhite">#ffece9e7</color>
+    <color name="orange3">#fff7a045</color>
+    <color name="orange4">#fff0922f</color>
+    <color name="orange4_2">#ffe7572b</color>
+    <color name="Transparent">#00000000</color>
+    <color name="litlebule">#ff4cb7eb</color>
+    <color name="reb_bg">#fffe7878</color>
+    <color name="lihtgreen_bg">#ff84c318</color>
+    <color name="lihtgreen_bg_2">#ff1ac422</color>
+    <color name="blue">#ff008eb1</color>
+    <color name="blue2">#ff1f659b</color>
+    <color name="colorF00">#ffff0000</color>
+    <color name="color00F">#ff0000ff</color>
+    <color name="transparent">#00000000</color>
+    <color name="notransparent2">#ffe79e2f</color>
+    <color name="notransparent3">#ffffffff</color>
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="possible_result_points">#c0ffbd21</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+
+</resources>
